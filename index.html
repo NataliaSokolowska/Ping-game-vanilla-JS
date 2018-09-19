@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arcanoid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-section">
+        <div id="gameOverMenu" class="game-over">
+            <button id="againBtn" class="try-again"></button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="score">
+            <div class="title">
+                <h1>score</h1>
+            </div>
+            <div class="score-item">
+                <h2 class="score-text">Player blue <span id="playerScore" class="player-first">0</span> : <span id="aiScore" class="player-second">0</span>
+                    Player red
+                </h2>
+            </div>
+        </div>
+        <div id="instruction" class="instruction-section">
+            <h2>Instruction</h2>
+            <button id="instructionBtn" class="instruction-btn">show</button>
+            <div id="instruction-hidden" class="instruction-text">
+                <ul>
+                    <li>Start game - click S</li>
+                    <li>Pause/return game - click P</li>
+                    <li>Move paddle - move Your mouse</li>
+                    <li>If you get or lose a point - click to resume the game</li>
+                </uL>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Natalia Sokołowska, 2018<p>
+                <p><a href="https://github.com/nataliasokolowska">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

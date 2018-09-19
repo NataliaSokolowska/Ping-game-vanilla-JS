@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.game-over {
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    filter: blur(20px);
+    transform: scale(.5);
+    background-color: red;
+    position: fixed;
+}
+
+.game-over.active {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #84b71c;
+    letter-spacing: 5px;
+}
+
+.try-again {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 100px);
+    z-index: 1;
+}
+
+canvas {
+    border: 8px solid #84b71c;
+    position: relative;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.score-text span {
+    color: #84b71c;
+    font-size: 3rem;
+}
+
+.score-text .player-first {
+    color: #a3d3d5;
+}
+
+.score-text .player-second {
+    color: #ff3b41;
+}
+
+.instruction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.instruction-section h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.instruction-btn {
+    text-transform: uppercase;
+}
+
+.instruction-text {
+    display: none;
+    margin-top: 20px;
+    /*transition: all 0.5s ease-in-out;*/
+}
+
+.instruction-text ul li {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #919db7;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #84b71c;
+}
+
+footer a:hover {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
